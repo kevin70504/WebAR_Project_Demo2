@@ -203,6 +203,7 @@
 					ModelName,
 					function (gltf) {
 						Object = gltf.scene;
+						Object.scale.set(0.5,0.5,0.5);
 						scene.add(Object);
 						loadingBar.visible = false; //隱藏讀取條
 						render();
