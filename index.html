@@ -257,16 +257,19 @@
 					if ( hitTestSource ) {
 
 						const hitTestResults = frame.getHitTestResults( hitTestSource );
+						const btn_placeObject = document.getElementById("placeObject");
 
 						if ( hitTestResults.length ) {
 
 							const hit = hitTestResults[ 0 ];
 
+							btn_placeObject.style.display = "block";
 							reticle.visible = true;
 							reticle.matrix.fromArray( hit.getPose( referenceSpace ).transform.matrix );
 
 						} else {
 
+							btn_placeObject.style.display = "none";
 							reticle.visible = false;
 
 						}

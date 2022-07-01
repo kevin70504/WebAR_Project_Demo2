@@ -151,5 +151,5 @@ body {
     left: calc(40%);
     width: 120px;
     height: 40px;
-    display: block;
+    display: none;
   }
